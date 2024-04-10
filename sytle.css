@@ -66,6 +66,7 @@ li{
 .row {
     width: 100%;
     max-width: 1300px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,10 +75,13 @@ li{
     width: 500px;
 }
 
-#about {
+#about,#discord,#contact,footer {
    
     padding: 48px 0;
 
+}
+#about {
+    background-color: #f8ffdc;
 }
 
 h2{
@@ -112,4 +116,36 @@ img {
     font-size: 24px;
     line-height: 1.5;
     margin-bottom: 24px;
+}
+
+#constact {
+    background-color: #dce9ff;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin : 0 auto;
+}
+
+input.textarea{
+    margin-bottom: 24px;
+    font-size:20px;
+    padding :6px 12px;
+}
+
+footer{
+    background-color: #aaf5ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer_links{
+    margin-bottom: 32px;
+}
+
+.footer_links{
+    padding: 0 16px;
 }

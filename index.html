@@ -34,6 +34,7 @@
     <main>
         <section id="about">
         <h2>ABOUT</h2>
+        <div class="row">
         <div class = "section__description">
         <div class ='section__description--wrapper'>
             <p class="section__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae dolorum tenetur et quo eveniet necessitatibus, doloremque dolor enim, odit ad accusamus excepturi dolorem nihil aliquid mollitia quisquam repellendus provident optio?</p>
@@ -44,34 +45,41 @@
             <img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1698872092-61vqI0vw94L.jpg?crop=1xw:1.00xh;center,top&resize=980:*" alt="lap">
         </figure>
         </div>
+        </div>
         </section>
 
         <section id="discord">
             <h2>discord</h2>
-            <figure>
+            <div class="row">
+            <div class="section__description">
+            <figure class="about__img--wrapper">
                 <img src="https://static-00.iconduck.com/assets.00/discord-icon-2048x2048-o5mluhz2.png" alt="discord">
             </figure>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti vitae libero, perspiciatis magnam natus assumenda? Mollitia veniam quis, voluptatem iure perferendis pariatur obcaecati distinctio cupiditate assumenda modi ex sint officiis.</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel consequuntur facilis est enim vero quidem rem reiciendis fugit nisi, expedita veritatis assumenda dolores sit exercitationem doloribus tenetur iure perspiciatis tempore!</p>
+            <div class="about__img--wrapper">
+                <p class="section__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti vitae libero, perspiciatis magnam natus assumenda? Mollitia veniam quis, voluptatem iure perferendis pariatur obcaecati distinctio cupiditate assumenda modi ex sint officiis.</p>
+                <p class="section__description--para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel consequuntur facilis est enim vero quidem rem reiciendis fugit nisi, expedita veritatis assumenda dolores sit exercitationem doloribus tenetur iure perspiciatis tempore!</p>
+            </div>
+            </div>
             </div>
         </section>
+
         <section id="contact">
             <h2>Contact</h2>
             <form action="">
                 <span>Email</span>
-                <input type="text" placeholder="jane@example.com">
+                <input type="email" placeholder="jane@example.com">
                 <span>Message</span>
-                <textarea type="text" placeholder="jane@example.com"></textarea>
+                <textarea type="text" placeholder="cool website"></textarea>
+                <button>Contact Us</button>
             </form>
         </section>
     </main>
 
     <footer>
-        <div>
-            <a href="#about">about</a>
-            <a href="#discord">discord</a>
-            <a href="#contact">contact</a>
+        <div class="footer_links">
+            <a class="footer_links" href="#about">about</a>
+            <a class="footer_links" href="#discord">discord</a>
+            <a class="footer_links" href="#contact">contact</a>
         </div>
         <p>Copyright Frontend simplified </p>
     </footer>
