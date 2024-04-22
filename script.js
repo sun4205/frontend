@@ -60,3 +60,75 @@ for( let i=1;  i<=20; i++){
     }
         
 }
+
+const sen = 'Frontend Simplified';
+
+for(let i=0; i<sen.length; i++){
+    console.log(sen[i]);
+}
+
+function convertCelsiusToFahrenheit(celsius){
+   let fahrenheit = celsius * 1.8 +32;
+   return fahrenheit;
+}
+
+console.log(convertCelsiusToFahrenheit(0));
+console.log(convertCelsiusToFahrenheit(10));
+console.log(convertCelsiusToFahrenheit(30));
+
+
+
+
+let grades = ['A+','A','FAIL'];
+
+let goodGrade = [];
+
+for(let i =0; i<grades.length; i++){
+    if(grades[i] !== 'FAIL'){
+        goodGrade.push(grades[i])
+        
+    }
+}
+
+
+let gradeFilter = grades.filter(grade => {
+    return grade !=='FAIL'
+})
+
+console.log(gradeFilter);
+
+let dollars = [1,5,10,3];
+let cents = dollars.map(element=>{
+return element*100
+})
+
+console.log(cents);
+
+let coin = [1,5,10,4]
+let cent = []
+
+for(let i=0; i<coin.length; i++){
+    cent.push(coin[i] * 100)
+  
+}
+
+console.log(cent)
+
+let user = [
+
+]
+
+function register(){
+    let userObject = {
+        username:'hanna1234',
+        email:'hanna@1234',
+        password : '1234',
+        subscriptionStatus :'normal',
+        discordId:'hanna1111',
+        lessonsCompleted:'expert'
+    }
+    user.push(userObject);
+}
+
+register();
+console.log(user)
